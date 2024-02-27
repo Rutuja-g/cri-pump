@@ -1,10 +1,19 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const AwardInfo = ({ text }) => {
   return <div className="app-award">{text}</div>;
 };
+AwardInfo.propTypes = {
+  text: PropTypes.node.isRequired,
+};
+
+AwardInfo.defaultProps = {
+  text: <div>No information provided.</div>,
+};
 
 export default AwardInfo;
+
 // import React from "react";
 // import "./AwardInfo.css";
 
