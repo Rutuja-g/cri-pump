@@ -1,0 +1,14 @@
+.award-layout-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .award-layout-container > * {
+    flex: 1 0 100%;
+  }
+}

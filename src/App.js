@@ -1,4 +1,8 @@
 import React from "react";
+import AwardHeader from "./AwardHeader";
+import AwardInfo from "./AwardInfo";
+import AwardProducts from "./AwardProducts";
+import AwardFooter from "./AwardFooter";
 import "./App.css";
 
 const App = () => {
