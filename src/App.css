@@ -1,78 +1,74 @@
-.app-container {
+body {
+  background: linear-gradient(to top, rgb(247, 226, 147), #fff);
+}
+.middle-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: Arial, sans-serif;
+  margin: 4px;
 }
-
-.app-header {
-  text-align: center;
-  padding: 1rem;
+.award-image {
+  width: 1/2;
 }
-
-.app-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-}
-
-.app-award {
-  text-align: center;
+.award-logo {
   width: 100%;
-  max-width: 600px;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
 }
 
-.app-stats {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 600px;
+.title {
+  font-weight: bold;
 }
-
-.stat-item {
+.award-text,
+.awardgiving-text {
+  text-align: justify;
+}
+.awardgiving-image {
+  margin: 4px;
+  width: full;
+  height: auto;
   text-align: center;
-  flex-basis: calc(50% - 1rem);
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
 }
 
-.stat-item h3 {
-  margin-top: 0;
-}
-
-.app-footer {
+.awardgiving-logo {
   width: 100%;
-  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.products-text {
   text-align: center;
-  padding: 1rem;
-  margin-top: 1rem;
 }
 
-.app-footer a {
-  color: #007bff;
-  text-decoration: none;
-  margin: 0 0.5rem;
+.products {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+.products-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 100%;
+}
+.line {
+  border: none;
+  margin: 4px;
+  height: 2px;
+  background-color: red;
 }
 
-@media (max-width: 768px) {
-  .app-content {
-    align-items: center;
+@media (max-width: 700px) {
+  .award-logo {
+    height: 100%;
   }
-
-  .app-stats {
-    flex-direction: column;
+  .products-image {
+    width: 75%;
+    height: 75%;
+    display: block;
   }
-
-  .stat-item {
-    margin-bottom: 1rem;
-    flex-basis: 100%;
+  .products {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    height: 35vh;
   }
 }
